@@ -37,7 +37,7 @@ static void EPD_GPIO_init(void){
 	 * configure GPIO pins for SPI use
 	 */
 	GPIO_Handle_t SPIPins;
-	SPIPins.pGPIOx = GPIOB; //all pins used are port B
+	SPIPins.pGPIOx = GPIOB; // all pins used are port B
 	SPIPins.GPIOPinConfig.GPIO_PinMode = GPIO_MODE_ALTFUN;
 	SPIPins.GPIOPinConfig.GPIO_PinAltFunMode = 0;
 	SPIPins.GPIOPinConfig.GPIO_PinOPType = GPIO_OTYPE_PP;
@@ -64,7 +64,7 @@ static void EPD_GPIO_init(void){
 	GPIO_WriteToOutputPin(GPIOB, 12, SET);
 	GPIO_Init(&SPIPins);
 
-	//PB2 in input mode to read busy pin
+	// PB2 in input mode to read busy pin
 	GPIO_Handle_t ReadBusyPin;
 	ReadBusyPin.pGPIOx = GPIOB;
 	ReadBusyPin.GPIOPinConfig.GPIO_PinNumber = GPIO_PIN_NO_2;
