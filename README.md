@@ -28,7 +28,7 @@ In this repo you will find:
 | GND         | Ground         | GND              |
 | VCC         | Power Supply   | 3.3V             |
 
-The STM32 connections are not chosen out of necessity. Pins used can be changed so long as the software is changed accordingly they are able to fulfil the purpose you expect of them (check the reference manual for this information).
+The STM32 connections are not chosen out of necessity. Pins used can be changed so long as the software is changed accordingly and they are able to fulfil the purpose you expect of them (check the reference manual for this information).
 
 ### Setting Up Environment 
 1. Create a new STM32 project in STM32CubeIDE for the NUCLEO-F030R8 board.
